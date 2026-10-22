@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Horizont: ein Kreis aus zwei Halbkreisen, die sich gegenüberstehen; die Lücke ist die Linie -->
+  <rect width="512" height="512" fill="#111211"/>
+  <g fill="none" stroke="#e6e3dc" stroke-width="12" stroke-linecap="round">
+    <path d="M 127.27 237.91 A 130 130 0 0 1 384.73 237.91"/>
+    <path d="M 127.27 274.09 A 130 130 0 0 0 384.73 274.09"/>
+  </g>
+</svg>
