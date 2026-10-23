@@ -19,7 +19,7 @@ Kein Überblick über alles, sondern Wiederkehr dessen, was einmal wichtig ersch
 | ↑ wischen | +1 Punkt (einmal pro Durchlauf) | ↑ |
 | ↓ wischen | −1 Punkt (einmal pro Durchlauf) | ↓ |
 | 2× tippen | Menü: umformulieren, archivieren, Archiv, Einstellungen | M |
-| halten | umformulieren | ↵ |
+| halten | umformulieren, direkt im Text (Enter oder «fertig» speichert, Esc verwirft) | ↵ |
 | + | neuer Gedanke | N |
 
 Pro Durchlauf (eine Anzeige) ist nur ein Schritt möglich: nach +1 bewirkt ein weiteres ↑ nichts,
@@ -38,7 +38,9 @@ nächsten Gedanken gewischt wird.
 
 ## Technik
 
-- Eine einzelne HTML-Datei (`index.html`), kein Build-Schritt, kein Framework. Schrift: Work Sans.
+- Eine einzelne HTML-Datei (`index.html`), kein Build-Schritt, kein Framework.
+- Schrift: Work Sans (300/400/500, latin), als WOFF2 eingebettet, damit sie auch offline und per
+  `file://` gleich aussieht. Lizenz: SIL Open Font License 1.1.
 - Daten liegen als JSON in einem separaten Repository (`horizont-data`, Datei
   `horizont-daten.json`), eingebunden über die GitHub-Contents-API mit einem Personal Access
   Token (2× tippen → Einstellungen). Fine-grained Token mit «Contents: Read and write» genügt.
