@@ -120,6 +120,8 @@ a { color: var(--fg); }
   white-space: pre-line; overflow-wrap: anywhere; text-wrap: pretty;
 }
 .reader .more { color: var(--muted); font-weight: 300; padding: 0.15em 0.25em; margin: -0.15em -0.25em; }
+.reader .back { white-space: nowrap; }
+.reader .back svg { width: 0.8em; height: 0.8em; margin: 0 0.08em; vertical-align: -0.05em; fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
 
 /* Dialoge */
 dialog {
@@ -613,7 +615,8 @@ function openReader(text) {
   closeMenu();
   const p = $('readerText');
   p.replaceChildren(document.createTextNode(text + ' '));
-  const back = el('button', 'more', '[…]'); back.type = 'button'; back.setAttribute('aria-label', 'zurück');
+  const back = el('button', 'more back'); back.type = 'button'; back.setAttribute('aria-label', 'zurück');
+  back.innerHTML = '[<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13 3v5.5H3.5M7 5 3.5 8.5 7 12"/></svg>]';
   p.append(back);
   $('reader').scrollTop = 0;
   $('reader').hidden = false;
